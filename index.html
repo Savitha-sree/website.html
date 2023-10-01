@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML and CSS Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+      <nav>
+        <h1>HTML,CSS Documentation</h1>
+        <ul>
+          <a href="#Introduction"><li>Introduction</li></a>
+          <a href="#HTML Topics"><li>HTML Topics</li></a>
+          <a href="#CSS Topics"><li>CSS Topics</li></a>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <section id="Introduction">
+        <h2>Introduction</h2>
+        <article>
+        <p>
+          <strong><mark>HTML</mark></strong> (Hypertext Markup Language) and <strong><mark>CSS</mark></strong> (Cascading Style Sheets) are
+          two fundamental technologies that form the backbone of web
+          development. They are used to create and style the content you see on
+          the World Wide Web, making web pages visually appealing and
+          structurally organized. Let's explore each of them briefly: HTML
+          (Hypertext Markup Language): HTML is the standard markup language used
+          to create the structure and content of web pages. It consists of a
+          series of elements or tags that define different parts of a web page,
+          such as <span class="text-primary"><q>headings, paragraphs, links, images, and forms.</q></span> HTML uses a
+          hierarchical structure, with elements nested within one another to
+          create the layout and hierarchy of content. It provides the essential
+          building blocks for web pages, defining what content is displayed and
+          how it is organized.<br/>
+        </article></p>
+      </section><hr/>
+      <section id="HTML Topics">
+        <h2>HTML Topics</h2>
+      <p>
+          <ul>The main parts of our element are as follows:
+
+<li><p>The opening tag: This consists of the name of the element (in this case, p), wrapped in opening and closing angle brackets. This states where the element begins or starts to take effect — in this case where the paragraph begins.</li>
+<li>The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the paragraph ends. Failing to add a closing tag is one of the standard beginner errors and can lead to strange results.<br/></li>
+<li>The content: This is the content of the element, which in this case, is just text.<br/></li>
+<li>The element: The opening tag, the closing tag, and the content together comprise the element.</p></li></ul>
+
+
+<ul>Attributes that set a value always have:<br/>
+<li>A space between it and the element name (or the previous attribute, if the element already has one or more attributes).</li>
+<li>The <span class="text-primary"> attribute name followed by an equal sign.</span></li>
+<li>The attribute value wrapped by <mark>opening and closing quotation marks.</mark></li></ul>
+</p>
+
+<h3>Nesting elements</h3>
+<ul><li>You can put elements inside other elements too — this is called <strong>nesting.</strong> If we wanted to state that our cat is very grumpy, we could wrap the word "very" in a  <strong>strong</strong> element, which means that the word is to be strongly emphasized:</ul></li>
+<img src="./Screenshot 2023-10-01 125035.png" width="900px" height="130px" /> 
+<h3>Void Elements</h3>
+<ul><li>Some elements have no content and are called <strong><a href="https://developer.mozilla.org/en-US/docs/Glossary/Void_element">void elements.</a></strong> Take the <mark><u>img</u></mark> element that we already have in our HTML page:
+</li></ul>
+<img src="./img src.png" width="900px" height="130px">
+<ul><li>This contains two attributes, but there is no closing <mark><u>img</u></mark> tag and no inner content. This is because an image element doesn't wrap content to affect it. Its purpose is to embed an image in the HTML page in the place it appears.</li></ul>
+<h3>Anatomy Of an Html Document</h3>
+<ul><li>That wraps up the basics of individual HTML elements, but they aren't handy on their own. Now we'll look at how individual elements are combined to form an entire HTML page. Let's revisit the code we put into our index.html example (which we first met in the <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files">Dealing with files</a> article):
+</li></ul><br/>
+Here, we have the following:<br/>
+<ul>
+<li><!DOCTYPE html>!DOCTYPE html — <a href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype">doctype.</a> It is a required preamble. In the mists of time, when HTML was young (around 1991/92), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things. However, these days, they don't do much and are basically just needed to make sure your document behaves correctly. That's all you need to know for now.</li>
+<li><html></html>HTML — the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html">html</a>element. This element wraps all the content on the entire page and is sometimes known as the root element. It also includes the lang attribute, setting the primary language of the document.</li>
+<li><head></head>Head — the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head">head</a> element. This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear in search results, CSS to style our content, character set declarations, and more.</li>
+<li><meta charset="utf-8">Meta — This element sets the character set your document should use to UTF-8 which includes most characters from the vast majority of written languages. Essentially, it can now handle any textual content you might put on it. There is no reason not to set this, and it can help avoid some problems later on.</li>
+<li><meta name="viewport" content="width=device-width">meta— This <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts#mobile_viewports">viewport element</a> ensures the page renders at the width of viewport, preventing mobile browsers from rendering pages wider than the viewport and then shrinking them down.</li>
+<li><title></title>title — the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title">title</a> element. This sets the title of your page, which is the title that appears in the browser tab the page is loaded in. It is also used to describe the page when you bookmark/favorite it.</li>
+<li><body></body>body — the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body">body</a> element. This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else.
+  </li></ul>
+  <h3>Images</h3>
+  <li>Images
+    Let's turn our attention to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" class="bg-white"> img </a> element again:</li>
+    <img src="./image loop.png" width ="900px" height="130px"/><br/><br/>
+    As we said before, it embeds an image into our page in the position it appears. It does this via the src (source) attribute, which contains the path to our image file.<br/>
+
+    We have also included an alt (alternative) attribute. In the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#authoring_meaningful_alternate_descriptions">alt attribute,</a> you specify descriptive text for users who cannot see the image, possibly because of the following reasons:<br/>
+    
+<ol><li>    They are visually impaired. Users with significant visual impairments often use tools called screen readers to read out the alt text to them.</li>
+  <li>  Something has gone wrong causing the image not to display. For example, try deliberately changing the path inside your src attribute to make it incorrect. If you save and reload the page, you should see something like this in place of the image:</li></ol>
+  <h6>My Test Image</h6>
+  
+The words: my test image
+The keywords for alt text are "descriptive text". The alt text you write should provide the reader with enough information to have a good idea of what the image conveys. In this example, our current text of "My test image" is no good at all. A much better alternative for our Firefox logo would be "The Firefox logo: a flaming fox surrounding the Earth."<br/>
+
+Try coming up with some better alt text for your image now.<br/>
+<p class="note">
+  Note:Find out more about accessibility learning in our <a href="#">accessibility learning modules.</a>
+</p><br/>
+<h3>Marking up Text</h3><br/>
+This section will cover some essential HTML elements you'll use for marking up the text.<br/><br/>
+<h3>Headings</h3><br/>
+Heading elements allow you to specify that certain parts of your content are headings — or subheadings. In the same way that a book has the main title, chapter titles, and subtitles, an HTML document can too. HTML contains 6 heading levels, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"><mark>h1--h6</mark></a>, although you'll commonly only use 3 to 4 at most:<br/>
+<img src="./head.png"><br/><br/>
+<img class="v"src="./note1.png"><br/><br/>
+<h3>Paragraphs</h3>
+As explained above, <p> elements are for containing paragraphs of text; you'll use these frequently when marking up regular text content:<br/>
+<img src="./paragraph.png"/><br/><br/>
+Add your sample text (you should have it from <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like">What will your website look like?)</a> into one or a few paragraphs, placed directly below your <img> element.<br/><br/>
+<h3>Lists</h3>
+A lot of the web's content is lists and HTML has special elements for these. Marking up lists always consists of at least 2 elements. The most common list types are ordered and unordered lists:<br/>
+
+<ol><li><h6>Unordered lists</h6>Unordered lists are for lists where the order of the items doesn't matter, such as a shopping list. These are wrapped in a <mark>ul</mark> element.</li>
+<li><h6>Ordered lists</h6>Ordered lists are for lists where the order of the items does matter, such as a recipe. These are wrapped in an <mark>ol</mark> element.</li>
+Each item inside the lists is put inside an <mark>li</mark> (list item) element.</ol>
+Each item inside the lists is put inside an <mark>li</mark> (list item) element.<br/>
+
+  For example, if we wanted to turn the part of the following paragraph fragment into a list.<br/><br/>
+  <img src="./list1.png"><br/><br/>
+  We could modify the markup to this<br/><br/>
+  <img src="./list2.png"><br/><br/>
+  Try adding an ordered or unordered list to your example page.<br/>
+  <h3>Links</h3>
+  Links
+<ol>Links are very important — they are what makes the web a web! To add a link, we need to use a simple element — <a> — "a" being the short form for "anchor". To make text within your paragraph into a link, follow these steps:</ol>
+<li>Choose some text. We chose the text "Mozilla Manifesto".</li>
+<li>Wrap the text in an <a> element, as shown below:</li>
+  <img src="./links.png"/>
+  <li>Give the <a> element an href attribute, as shown below:</li>
+    <img src="./links1.png"/>
+    <li>Fill in the value of this attribute with the web address that you want the link to:</li>
+    <img src="./links3.png"/><br/>
+    Add a link to your page now, if you haven't already done so.
+<h3>Conclusion</h3>
+If you have followed all the instructions in this article, you should end up with a page that looks like the one below (you can also <a href="https://mdn.github.io/beginner-html-site/">view it here</a>):<br/>
+If you get stuck, you can always compare your work with our <a href="https://github.com/mdn/beginner-html-site/blob/main/index.html">finished example code</a> on GitHub.<br/>
+Here, we have only really scratched the surface of HTML. To find out more, go to our <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">Learning HTML</a> topic.<br/>
+<p><h5>Found a content problem with this page?</h5>
+  <ul>
+    <li><a href="https://github.com/mdn/content/edit/main/files/en-us/learn/getting_started_with_the_web/html_basics/index.md">Edit the page on GitHub.</a></li>
+    <li><a href="https://github.com/mdn/content/edit/main/files/en-us/learn/getting_started_with_the_web/html_basics/index.md">Report the content issue.</a></li>
+    <li><a href="https://github.com/mdn/content/blob/main/files/en-us/learn/getting_started_with_the_web/html_basics/index.md?plain=1">View the source on GitHub.</a></li>
+    Want to get more involved? <a href="https://github.com/mdn/content/blob/main/CONTRIBUTING.md">Learn how to contribute.</a><br/>
+This page was last modified on Aug 29, 2023 by <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/contributors.txt">MDN contributors</a><br/>
+  </ul>
+  </p>
+</section><hr/>
+<section id="CSS Topics">
+  <h2>CSS Topics</h2>
+  <p>CSS (Cascading Style Sheets) is the code that styles web content. CSS basics walks through what you need to get started. We'll answer questions like: How do I make text red? How do I make content display at a certain location in the (webpage) layout? How do I decorate my webpage with background images and colors?
+  <h3>What is CSS?</h3>
+  Like HTML, CSS is not a programming language. It's not a markup language either. CSS is a style sheet language. CSS is what you use to selectively style HTML elements. For example, this CSS selects paragraph text, setting the color to red:<br/>
+  <img src="./CSS.png"/><br/>
+  Let's try it out! Using a text editor, paste the three lines of CSS (above) into a new file. Save the file as style.css in a directory named styles.<br/>
+
+To make the code work, we still need to apply this CSS (above) to your HTML document. Otherwise, the styling won't change the appearance of the HTML. (If you haven't been following our project, pause here to read Dealing with files and HTML basics.)<br/>
+
+<ol><li>Open your index.html file. Paste the following line in the head (between the <head> and </head> tags):</li>
+  <img src="./css 1.png"/><br/>
+</ol>
+<h2>Anatomy Of a CSS Ruleset</h2>
+Let's dissect the CSS code for red paragraph text to understand how it works:<br/>
+The whole structure is called a ruleset. (The term ruleset is often referred to as just rule.) Note the names of the individual parts:<br/>
+<h5>Selector</h5>
+This is the HTML element name at the start of the ruleset. It defines the element(s) to be styled (in this example, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p"><p></a> elements). To style a different element, change the selector.<br/>
+<h5>Declaration</h5>
+This is a single rule like color: red;. It specifies which of the element's properties you want to style.<br/>
+<h5>Properties</h5>
+These are ways in which you can style an HTML element. (In this example, color is a property of the <p> elements.) In CSS, you choose which properties you want to affect in the rule.<br/>
+<h5>Property value</h5>
+To the right of the property—after the colon—there is the property value. This chooses one out of many possible appearances for a given property. (For example, there are many color values in addition to red.)<br/>
+<ol>Note the other important parts of the syntax:<br/>
+<li>Apart from the selector, each ruleset must be wrapped in curly braces. ({})</li>
+<li>Within each declaration, you must use a colon (:) to separate the property from its value or values.</li>
+<li>Within each ruleset, you must use a semicolon (;) to separate each declaration from the next one.</li>
+To modify multiple property values in one ruleset, write them separated by semicolons, like this:<br/>
+<img src="./CSS 2.png"/><br/>
+<h3>Selecting multiple elements</h3>
+<p>You can also select multiple elements and apply a single ruleset to all of them. Separate multiple selectors by commas. For example:</p><br/>
+<img src="./css 3.png"/><br/>
+<h3>Different types of selectors</h3>
+<p>There are many different types of selectors. The examples above use <strong>element selectors,</strong> which select all elements of a given type. But we can make more specific selections as well. Here are some of the more common types of selectors:</p>
+There are many more selectors to discover. To learn more, see the MDN <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors">Selectors guide.</a>
+</p>
+<h3>Fonts and text</h3>
+  <ol>Now that we've explored some CSS fundamentals, let's improve the appearance of the example by adding more rules and information to the style.css file.<br/>
+  <li>First, find the <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like#font">output from Google Fonts</a> that you previously saved from <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like">What will your website look like?.</a> Add the <link> element somewhere inside your index.html's <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head">head</a> (anywhere between the <head> and </head> tags). It looks something like this:</li>
+  <img src="./css4.png"/><br/>
+  This code links your page to a style sheet that loads the Open Sans font family with your webpage.<br/>
+<li>Next, delete the existing rule you have in your style.css file. It was a good test, but let's not continue with lots of red text.</li>
+<li>Add the following lines (shown below), replacing the font-family assignment with your font-family selection from <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like#font">What will your website look like?.</a> The property font-family refers to the font(s) you want to use for text. This rule defines a global base font and font size for the whole page. Since <a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html"><html></a> is the parent element of the whole page, all elements inside it inherit the same font-size and font-family.</li>
+<img src="./css 6.png"><br/>
+<li>Now let's set font sizes for elements that will have text inside the HTML body (h1, li, and p). We'll also center the heading. Finally, let's expand the second ruleset (below) with settings for line height and letter spacing to make body content more readable.</li>
+<img src="./css 8.png"/><br/>
+</ol>
+CSS layout is mostly based on the box model. Each box taking up space on your page has properties like:<br/>
+
+<ul><li>padding, the space around the content. In the example below, it is the space around the paragraph text.</li>
+<li>border, the solid line that is just outside the padding.</li>
+<li>margin, the space around the outside of the border.</li>
+<img src="./padding.png"/><br/>
+</ul><br/>
+In this section we also use:<br/>
+<ul><li>
+width (of an element).</li>
+<li>background-color, the color behind an element's content and padding.</li>
+<li>color, the color of an element's content (usually text).</li>
+<li>text-shadow sets a drop shadow on the text inside an element.</li>
+<li>display sets the display mode of an element. (keep reading to learn more)</li>
+To continue, let's add more CSS. Keep adding these new rules at the bottom of style.css. Experiment with changing values to see what happens.<br/>
+</ul>
+<h3>Changing the page color</h3>
+<img src="./padding 2.png"/><br/><br/>
+This rule sets a background color for the entire page. Change the color code to the color you chose in What will my website look like?.<br/>
+<h3>Styling the body</h3><br/>
+<img src="./padding 3.png"><br/><br/>
+There are several declarations for the <body> element. Let's go through these line-by-line:<br/>
+<ul>
+<li> width: 600px; This forces the body to always be 600 pixels wide.</li>
+<li> margin: 0 auto; When you set two values on a property like margin or padding, the first value affects the element's top and bottom side (setting it to 0 in this case); the second value affects the left and right side. (Here, auto is a special value that divides the available horizontal space evenly between left and right). You can also use one, two, three, or four values, as documented in Margin Syntax.</li>
+ <li> background-color: #FF9500; This sets the element's background color. This project uses a reddish orange for the body background color, as opposed to dark blue for the <html> element. (Feel free to experiment.)</li>
+<li> padding: 0 20px 20px 20px; This sets four values for padding. The goal is to put some space around the content. In this example, there is no padding on the top of the body, and 20 pixels on the right, bottom and left. The values set top, right, bottom, left, in that order. As with margin, you can use one, two, three, or four values, as documented in Padding Syntax.</li>
+<li>border: 5px solid black; This sets values for the width, style and color of the border. In this case, it's a five-pixel–wide, solid black border, on all sides of the body.</li>
+</ul>
+<h3>Postioning and Styling the Main Page title</h3><br/>
+<img src="./position.png"/><br/><br/>
+You may have noticed there's a horrible gap at the top of the body. That happens because browsers apply default styling to the <a href="#">h1</a> element (among others). That might seem like a bad idea, but the intent is to provide basic readability for unstyled pages. To eliminate the gap, we overwrite the browser's default styling with the setting margin: 0;.<br/>
+
+Next, we set the heading's top and bottom padding to 20 pixels.<br/>
+
+Following that, we set the heading text to be the same color as the HTML background color.<br/>
+
+<ul><li>Finally, text-shadow applies a shadow to the text content of the element. Its four values are:</li><br/>
+
+<li>The first pixel value sets the <b>horizontal offset</b> of the shadow from the text: how far it moves across.</li>
+<li>The second pixel value sets the <b>vertical offset</b> of the shadow from the text: how far it moves down.</li>
+<li>The third pixel value sets the blur radius of the shadow. A larger value produces a more <b>fuzzy-looking shadow.</b></li>
+  <li>The fourth value sets the <b>base color of the shadow.</b></li></ul>
+  Try experimenting with different values to see how it changes the appearance.<br/>
+  <h3>Centering the image </h3>
+  <img src="./center.png"/><br/>
+  <p>Next, we center the image to make it look better. We could use the margin: 0 auto trick again as we did for the body. But there are differences that require an additional setting to make the CSS work.<br/>
+
+The <body> is a <b>block </b>element, meaning it takes up space on the page. The margin applied to a block element will be respected by other elements on the page. In contrast, images are inline elements, for the auto margin trick to work on this image, we must give it block-level behavior using display: block;.<br/></p>
+  <img class="v" src="./note2.png"/><br/><br/>
+  <h3>Conclusion</h3>
+If you have followed all the instructions in this article, you should end up with a page that looks like the one below (you can also <a href="https://mdn.github.io/beginner-html-site/">view it here</a>):<br/>
+If you get stuck, you can always compare your work with our <a href="https://github.com/mdn/beginner-html-site/blob/main/index.html">finished example code</a> on GitHub.<br/>
+Here, we have only really scratched the surface of HTML. To find out more, go to our <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">Learning HTML</a> topic.<br/>
+<p><h5>Found a content problem with this page?</h5>
+  <ul>
+    <li><a href="https://github.com/mdn/content/edit/main/files/en-us/learn/getting_started_with_the_web/html_basics/index.md">Edit the page on GitHub.</a></li>
+    <li><a href="https://github.com/mdn/content/edit/main/files/en-us/learn/getting_started_with_the_web/html_basics/index.md">Report the content issue.</a></li>
+    <li><a href="https://github.com/mdn/content/blob/main/files/en-us/learn/getting_started_with_the_web/html_basics/index.md?plain=1">View the source on GitHub.</a></li>
+    Want to get more involved? <a href="https://github.com/mdn/content/blob/main/CONTRIBUTING.md">Learn how to contribute.</a><br/>
+This page was last modified on Aug 29, 2023 by <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/contributors.txt">MDN contributors</a><br/>
+  </ul>
+  </p>
+</section>
+    </main>
+  </div>
+  </body>
+</html>
